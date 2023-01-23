@@ -6,7 +6,14 @@ import styles from '../styles/Home.module.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
-  return <main>hello</main>;
+	return (
+		<>
+			<head>
+				<title>Gabe Santos</title>
+			</head>
+			<main className={styles.main}>Hi, I'm Gabe</main>
+		</>
+	);
 }
 
 //export default function Home() {
