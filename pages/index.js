@@ -9,7 +9,7 @@ export default function Home() {
 	return (
 		<>
 			<Head>
-				<Title>Gabe Santos</Title>
+				<title>Gabe Santos</title>
 			</Head>
 			<main className={styles.main}>Hi, I'm Gabe</main>
 		</>
