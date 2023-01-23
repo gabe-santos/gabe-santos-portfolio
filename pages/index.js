@@ -11,7 +11,7 @@ export default function Home() {
 			<Head>
 				<title>Gabe Santos</title>
 			</Head>
-			<main className={styles.main}>Hi, I'm Gabe</main>
+			<main className={styles.main}>Hi, Im Gabe</main>
 		</>
 	);
 }
