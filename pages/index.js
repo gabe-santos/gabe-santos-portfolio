@@ -14,8 +14,8 @@ export default function Home() {
 				<title>Gabe Santos</title>
 			</Head>
 			<div
-				className={`flex flex-col items-center h-screen pt-12 ${work_sans.variable}`}>
-				<div className='w-auto'>
+				className={`flex flex-col items-center h-screen mt-8 ${work_sans.variable}`}>
+				<div className='w-[40em]'>
 					<h1 className='text-5xl font-sans text-left'>
 						Hi, I&apos;m Gabe.
 					</h1>
