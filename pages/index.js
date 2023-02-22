@@ -17,11 +17,11 @@ export default function Home() {
 				className={`flex flex-col items-center h-screen pt-12 ${work_sans.variable}`}>
 				<div className='w-auto'>
 					<h1 className='text-5xl font-sans text-left'>
-						Hi, I'm Gabe.
+						Hi, I&apos;m Gabe.
 					</h1>
 					<p className='font-sans text-wrap pt-4'>
-						I'm a Computer Science Student and aspiring Frontend
-						Engineer from San Diego, California.
+						I&apos;m a Computer Science Student and aspiring
+						Frontend Engineer from San Diego, California.
 					</p>
 				</div>
 			</div>
