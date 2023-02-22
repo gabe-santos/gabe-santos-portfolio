@@ -1,9 +1,11 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { Inter } from '@next/font/google';
-import styles from '../styles/Home.module.css';
+import { Work_Sans } from '@next/font/google';
+// import styles from '../styles/Home.module.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const work_sans = Work_Sans({
+	subsets: ['latin'],
+	variable: '--font-work_sans',
+});
 
 export default function Home() {
 	return (
@@ -11,7 +13,18 @@ export default function Home() {
 			<Head>
 				<title>Gabe Santos</title>
 			</Head>
-			<main className={styles.main}>Hi, Im Gabe</main>
+			<div
+				className={`flex flex-col items-center h-screen pt-12 ${work_sans.variable}`}>
+				<div className='w-auto'>
+					<h1 className='text-5xl font-sans text-left'>
+						Hi, I'm Gabe.
+					</h1>
+					<p className='font-sans text-wrap pt-4'>
+						I'm a Computer Science Student and aspiring Frontend
+						Engineer from San Diego, California.
+					</p>
+				</div>
+			</div>
 		</>
 	);
 }
