@@ -8,17 +8,17 @@ import { motion } from 'framer-motion';
 export const metadata: Metadata = {
 	title: {
 		default: 'Gabe Santos',
-		template: '%s | Lee Robinson',
+		template: '%s | Gabe Santos',
 	},
 	description: 'Developer, writer, and creator.',
 	openGraph: {
 		title: 'Lee Robinson',
 		description: 'Developer, writer, and creator.',
-		url: 'https://leerob.io',
-		siteName: 'Lee Robinson',
+		url: 'https://gabesantos.dev',
+		siteName: 'Gabe Santos',
 		images: [
 			{
-				url: 'https://leerob.io/og.jpg',
+				url: 'https://gabesantos.dev/avatar.jpg',
 				width: 1920,
 				height: 1080,
 			},
@@ -36,13 +36,6 @@ export const metadata: Metadata = {
 			'max-image-preview': 'large',
 			'max-snippet': -1,
 		},
-	},
-	twitter: {
-		title: 'Lee Robinson',
-		card: 'summary_large_image',
-	},
-	icons: {
-		shortcut: '/favicon.ico',
 	},
 };
 
