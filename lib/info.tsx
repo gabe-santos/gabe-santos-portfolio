@@ -5,12 +5,12 @@ export const avatar = me;
 export const about = () => {
 	return (
 		<>
-			Hi, I'm Gabe. I'm a Frontend Engineer from San Diego, CA. I build
-			interfaces that optimize both form and function.
+			Hi, I&apos;m Gabe. I&apos;m a Frontend Engineer from San Diego, CA.
+			I build interfaces that optimize both form and function.
 		</>
 	);
 };
 
 export const bio = () => {
-	return <>Let's build something awesome.</>;
+	return <>Let&apos;s build something awesome.</>;
 };
