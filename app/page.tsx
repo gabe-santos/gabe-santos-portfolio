@@ -32,7 +32,7 @@ export default async function HomePage() {
 			initial={{ opacity: 0, x: 50 }}
 			animate={{ opacity: 1, x: 0 }}
 			transition={{ delay: 0.2, duration: 0.5 }}>
-			<h1 className='font-bold text-5xl font-sans'>{name}</h1>
+			<h1 className='text-5xl font-sans'>{name}</h1>
 			<p className='my-5 max-w-[460px] text-neutral-800 dark:text-neutral-200'>
 				{about()}
 			</p>

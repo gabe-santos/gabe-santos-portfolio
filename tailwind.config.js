@@ -10,7 +10,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Work Sans', ...fontFamily.sans],
+				sans: ['Space Grotesk', ...fontFamily.sans],
 				display: ['Nikea'],
 			},
 		},
