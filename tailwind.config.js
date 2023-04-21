@@ -3,13 +3,15 @@ const { fontFamily } = require('tailwindcss/defaultTheme');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
-		'./pages/*.{js, jsx, ts, tsx}',
-		'./components/**/*.{js,ts,jsx,tsx}',
+		'./app/**/*.{ts,tsx}',
+		'./components/**/*.{ts,tsx}',
+		'./content/**/*.mdx',
 	],
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['var(--font-work_sans)', ...fontFamily.sans],
+				sans: ['Work Sans', ...fontFamily.sans],
+				display: ['Nikea'],
 			},
 		},
 	},
