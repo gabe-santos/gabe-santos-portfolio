@@ -10,15 +10,15 @@ export const metadata: Metadata = {
 		default: 'Gabe Santos',
 		template: '%s | Gabe Santos',
 	},
-	description: 'Developer, writer, and creator.',
+	description: 'Frontend Engineer',
 	openGraph: {
-		title: 'Lee Robinson',
-		description: 'Developer, writer, and creator.',
+		title: 'Gabe Santos',
+		description: 'Frontend Engineer',
 		url: 'https://gabesantos.dev',
 		siteName: 'Gabe Santos',
 		images: [
 			{
-				url: 'https://gabesantos.dev/avatar.jpg',
+				url: 'https://gabesantos.dev/favicon.ico',
 				width: 1920,
 				height: 1080,
 			},
