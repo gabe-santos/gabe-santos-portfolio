@@ -3,9 +3,14 @@ import me from '../public/avatar.jpg';
 export const name = 'Gabe Santos';
 export const avatar = me;
 export const about = () => {
-	return <>I build cool shit. yyy</>;
+	return (
+		<>
+			Hi, I'm Gabe. I'm a Frontend Engineer from San Diego, CA. I build
+			interfaces that optimize both form and function.
+		</>
+	);
 };
 
 export const bio = () => {
-	return <>when im not coding i love getting cocktails and training BJJ</>;
+	return <>Let's build something awesome.</>;
 };
