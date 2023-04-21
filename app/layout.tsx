@@ -47,7 +47,7 @@ export default function RootLayout({
 	return (
 		<html
 			lang='en'
-			className='text-zinc-900 bg-zinc-200 dark:text-zinc-200 dark:bg-zinc-900'>
+			className='text-zinc-900 bg-zinc-200 dark:text-zinc-300 dark:bg-zinc-900'>
 			<body className='antialiased max-w-2xl mx-auto mt-8 md:mt-20 lg:mt-32'>
 				<div className='mx-4 mb-4'>
 					<div className='md:flex md:flex-row md:justify-between'>

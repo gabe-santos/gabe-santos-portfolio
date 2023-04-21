@@ -6,8 +6,8 @@ export const about = () => {
 	return (
 		<>
 			Hi, I&apos;m Gabe. I&apos;m a{' '}
-			<b>Frontend Engineer from San Diego, CA</b>. I build interfaces that
-			optimize both form and function.
+			<b className='font-mono'>Frontend Engineer from San Diego, CA</b>. I
+			build interfaces that optimize both form and function.
 		</>
 	);
 };

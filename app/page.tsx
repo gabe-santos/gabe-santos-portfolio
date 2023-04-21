@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import SlideInSection from '../components/SlideInSection';
 // import { getBlogViews, getTweetCount, getStarCount } from 'lib/metrics';
 // import {
 // 	ArrowIcon,
@@ -28,27 +29,24 @@ export default async function HomePage() {
 	// 	}
 
 	return (
-		<motion.section
-			initial={{ opacity: 0, x: 50 }}
-			animate={{ opacity: 1, x: 0 }}
-			transition={{ delay: 0.2, duration: 0.5 }}>
-			<h1 className='text-5xl font-sans font-bold'>{name}</h1>
+		<SlideInSection>
+			<h1 className='text-5xl font-mono font-bold'>{name}</h1>
 			<p className='my-5 max-w-[460px] text-zinc-800 dark:text-zinc-300 font-mono'>
 				{about()}
 			</p>
-			<div className='flex items-start md:items-center my-8 flex-col md:flex-row'>
-				{/* <Image
-					alt={name}
-					className='rounded-full grayscale'
-					src={avatar}
-					placeholder='blur'
-					width={100}
-					priority
-				/> */}
-			</div>
+
+			<Image
+				alt={name}
+				className='rounded-full grayscale'
+				src={avatar}
+				placeholder='blur'
+				width={100}
+				priority
+			/>
+
 			<p className='my-5 max-w-[600px] text-zinc-800 dark:text-zinc-300'>
 				{bio()}
 			</p>
-		</motion.section>
+		</SlideInSection>
 	);
 }
