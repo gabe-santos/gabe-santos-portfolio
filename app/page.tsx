@@ -30,7 +30,7 @@ export default async function HomePage() {
 
 	return (
 		<SlideInSection>
-			<h1 className='text-5xl font-mono font-bold'>{name}</h1>
+			<h1 className='text-6xl font-mono'>{name}</h1>
 			<p className='my-5 max-w-[460px] text-zinc-800 dark:text-zinc-300 font-mono'>
 				{about()}
 			</p>
