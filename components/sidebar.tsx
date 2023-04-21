@@ -72,7 +72,7 @@ export default function Navbar() {
 														layoutId='sidebar'
 														transition={{
 															type: 'spring',
-															stiffness: 350,
+															stiffness: 250,
 															damping: 30,
 														}}
 													/>
