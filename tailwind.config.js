@@ -10,10 +10,11 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['Space Grotesk', ...fontFamily.sans],
+				sans: ['Space Mono', ...fontFamily.sans],
 				display: ['Nikea'],
+				mono: ['Space Mono', 'monospace'],
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/typography')],
 };

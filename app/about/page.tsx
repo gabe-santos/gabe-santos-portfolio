@@ -9,7 +9,7 @@ export default function AboutPage() {
 			animate={{ opacity: 1, x: 0 }}
 			transition={{ delay: 0.2, duration: 0.5 }}>
 			<h1 className='text-3xl font-sans'>About Me</h1>
-			<p className='my-5 text-neutral-800 dark:text-neutral-200'>
+			<p className='my-5'>
 				This is my about page. Irure Lorem tempor voluptate ullamco
 				cillum incididunt esse commodo ad. Aute laboris consequat est
 				eiusmod sint est amet voluptate labore. Mollit tempor incididunt

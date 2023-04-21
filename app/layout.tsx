@@ -47,12 +47,12 @@ export default function RootLayout({
 	return (
 		<html
 			lang='en'
-			className='text-black bg-white dark:text-white dark:bg-[#111010]'>
+			className='text-zinc-900 bg-zinc-200 dark:text-zinc-200 dark:bg-zinc-900'>
 			<body className='antialiased max-w-2xl mx-auto mt-8 md:mt-20 lg:mt-32'>
 				<div className='mx-4 mb-4'>
 					<div className='md:flex md:flex-row md:justify-between'>
 						<Sidebar />
-						<main className='flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0 mx-auto'>
+						<main className='flex-auto min-w-0 mt-6 md:mt-0 flex flex-col px-2 md:px-0 mx-auto font-mono'>
 							{children}
 						</main>
 					</div>

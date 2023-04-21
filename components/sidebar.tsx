@@ -42,7 +42,7 @@ export default function Navbar() {
 	}
 
 	return (
-		<aside className='md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-sans'>
+		<aside className='md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-mono'>
 			<div className='lg:sticky lg:top-20'>
 				<div className=''>
 					<Logo />
@@ -60,10 +60,9 @@ export default function Navbar() {
 											key={path}
 											href={path}
 											className={clsx(
-												'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle',
+												'transition-all hover:text-zinc-900 dark:hover:text-zinc-300 flex align-middle',
 												{
-													'text-neutral-500':
-														!isActive,
+													'text-gray-500': !isActive,
 													'font-bold': isActive,
 												}
 											)}>
@@ -71,7 +70,7 @@ export default function Navbar() {
 												{name}
 												{path === pathname ? (
 													<motion.div
-														className='absolute inset-0 bg-neutral-100 dark:bg-neutral-800 rounded-md z-[-1]'
+														className='absolute inset-0 bg-zinc-400 dark:bg-zinc-700 z-[-1]'
 														layoutId='sidebar'
 														transition={{
 															type: 'spring',

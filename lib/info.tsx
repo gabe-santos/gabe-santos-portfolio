@@ -3,7 +3,7 @@ import me from '../public/avatar.jpg';
 export const name = 'Gabe Santos';
 export const avatar = me;
 export const about = () => {
-	return <>I build cool shit.</>;
+	return <>I build cool shit. yyy</>;
 };
 
 export const bio = () => {
