@@ -1,16 +1,12 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import SlideInSection from '../../components/SlideInSection';
+import Page from '../../components/Page';
 
-export default function ProjectsPage() {
+const ProjectsPage = () => {
 	return (
-		<SlideInSection>
-			<h1 className='text-3xl font-mono font-bold dark:text-zinc-300'>
-				Projects
-			</h1>
+		<Page title='Projects'>
 			<h2 className='text-2xl font-mono dark: text-zinc-300 my-5'>
 				The Macrolator
 			</h2>
@@ -29,6 +25,8 @@ export default function ProjectsPage() {
 					priority
 				/>
 			</div>
-		</SlideInSection>
+		</Page>
 	);
-}
+};
+
+export default ProjectsPage;

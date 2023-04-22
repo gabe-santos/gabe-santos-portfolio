@@ -6,8 +6,10 @@ export const about = () => {
 	return (
 		<>
 			Hi, I&apos;m Gabe. I&apos;m a{' '}
-			<b className='font-mono'>Frontend Engineer from San Diego, CA</b>. I
-			build interfaces that optimize both form and function.
+			<span className='font-mono font-bold'>
+				Frontend Engineer from San Diego, CA
+			</span>
+			. I build interfaces that optimize both form and function.
 		</>
 	);
 };
