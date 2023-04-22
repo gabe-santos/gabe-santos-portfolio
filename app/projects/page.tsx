@@ -23,7 +23,7 @@ export default function ProjectsPage() {
 				<Image
 					alt='macrolator gif'
 					className=''
-					src='/../public/macrolator.gif'
+					src={require('../../public/macrolator.gif')}
 					height={100}
 					width={800}
 					priority
