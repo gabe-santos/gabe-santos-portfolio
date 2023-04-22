@@ -1,16 +1,37 @@
 'use client';
 
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 import Page from '../../components/Page';
 
-export default function AboutPage() {
+const AboutPage = () => {
 	return (
 		<Page title='About Me'>
-			This is my about page. Irure Lorem tempor voluptate ullamco cillum
-			incididunt esse commodo ad. Aute laboris consequat est eiusmod sint
-			est amet voluptate labore. Mollit tempor incididunt magna excepteur
-			duis et non consectetur nulla ex sint aliquip. Proident mollit
-			officia irure dolore veniam excepteur culpa consequat sint labore
-			dolor.
+			<p>
+				I love developing software that not only improves people&apos;s
+				lives, but also brings them joy when using it.
+			</p>
+			<div className='my-5 space-x-4'>
+				<Link
+					className='border border-zinc-500 py-1 px-2 text-center inline-block hover:bg-zinc-500'
+					href='mailto:gabe.santos.codes@gmail.com'>
+					Email
+				</Link>
+				<Link
+					className='border border-zinc-500 py-1 px-2 text-center inline-block hover:bg-zinc-500'
+					href='https://www.linkedin.com/in/gabesantoscodes/'
+					target='_blank'>
+					LinkedIn
+				</Link>
+				<motion.a
+					className='border border-zinc-500 py-1 px-2 text-center inline-block hover:bg-zinc-500'
+					href='https://www.instagram.com/gabe.santos/'
+					target='_blank'>
+					Instagram
+				</motion.a>
+			</div>
 		</Page>
 	);
-}
+};
+
+export default AboutPage;

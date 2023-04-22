@@ -2,7 +2,6 @@
 
 import Image from 'next/image';
 import Page from '../components/Page';
-import SlideInSection from '../components/SlideInSection';
 import { name, avatar, about, bio } from '../lib/info';
 
 export const revalidate = 60;
@@ -13,10 +12,10 @@ export default async function HomePage() {
 			{about()}
 			<Image
 				alt={name}
-				className='rounded-full grayscale my-5'
+				className='grayscale my-5 rounded-full'
 				src={avatar}
 				placeholder='blur'
-				width={120}
+				width={128}
 				priority
 			/>
 			{bio()}
