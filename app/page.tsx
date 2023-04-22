@@ -6,6 +6,8 @@ import { name, avatar, about, bio } from '../lib/info';
 
 export const revalidate = 60;
 
+import React, { useState } from 'react';
+
 export default async function HomePage() {
 	return (
 		<Page title={name}>

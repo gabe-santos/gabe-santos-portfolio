@@ -7,7 +7,7 @@ import Page from '../../components/Page';
 const ProjectsPage = () => {
 	return (
 		<Page title='Projects'>
-			<h2 className='text-2xl font-mono dark: text-zinc-300 my-5'>
+			<h2 className='text-2xl font-mono text-zinc-800 dark:text-zinc-300 my-5'>
 				The Macrolator
 			</h2>
 			<div className='relative group'>
