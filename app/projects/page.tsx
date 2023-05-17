@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Page from '../../components/Page';
+import excursionistGif from '../../public/excursionist.gif';
 import macrolatorGif from '../../public/macrolator.gif';
 import portfolioGif from '../../public/porfolio.gif';
 
@@ -34,6 +35,11 @@ const Project = ({ link, name, gifPath }) => {
 const ProjectsPage = () => {
 	return (
 		<Page title='Projects'>
+			<Project
+				link='https://github.com/gabe-santos/excursionist'
+				name='Excursionist'
+				gifPath={excursionistGif}
+			/>
 			<Project
 				link='https://github.com/gabe-santos/calorie-macro-calc'
 				name='The Macrolator'
