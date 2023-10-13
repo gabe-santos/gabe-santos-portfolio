@@ -1,13 +1,19 @@
 'use client';
 
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import Page from '../../components/Page';
 import excursionistGif from '../../public/excursionist.gif';
 import macrolatorGif from '../../public/macrolator.gif';
-import portfolioGif from '../../public/porfolio.gif';
+import agency from '../../public/agency-site.png';
 
-const Project = ({ link, name, gifPath }) => {
+interface ProjectProps {
+  link: string;
+  name: string;
+  img: string | StaticImageData;
+}
+
+const Project = ({ link, name, img }: ProjectProps) => {
   return (
     <>
       <h2 className='my-5 font-mono text-2xl text-zinc-800 dark:text-zinc-300'>
@@ -20,14 +26,7 @@ const Project = ({ link, name, gifPath }) => {
         >
           <span className='text-lg text-white'>Github</span>
         </Link>
-        <Image
-          alt='macrolator gif'
-          className=''
-          src={gifPath}
-          height={100}
-          width={800}
-          priority
-        />
+        <Image alt='macrolator gif' className='w-full' src={img} />
       </div>
     </>
   );
@@ -37,14 +36,19 @@ const ProjectsPage = () => {
   return (
     <Page title='Projects'>
       <Project
+        link='https://fr-mentor-arch-studio.vercel.app/'
+        name='Agency Website'
+        img={agency}
+      />
+      <Project
         link='https://github.com/gabe-santos/excursionist'
         name='Excursionist'
-        gifPath={excursionistGif}
+        img={excursionistGif}
       />
       <Project
         link='https://github.com/gabe-santos/calorie-macro-calc'
         name='The Macrolator'
-        gifPath={macrolatorGif}
+        img={macrolatorGif}
       />
     </Page>
   );
