@@ -5,11 +5,12 @@ export const avatar = me;
 export const about = () => {
   return (
     <>
-      Hi, I&apos;m Gabe. I&apos;m a{' '}
-      <span className="font-mono font-bold">
+      I&apos;m a{' '}
+      <span className='font-mono font-bold'>
         Frontend Developer from San Diego, CA
       </span>
-      . I build interfaces that optimize both form and function.
+      . I build thoughtfully crafted websites and apps that are
+      <span className='font-bold'> pretty, practical, and performant.</span>
     </>
   );
 };

@@ -33,23 +33,31 @@ const Project = ({ link, name, img }: ProjectProps) => {
 };
 
 const ProjectsPage = () => {
+  const isRebuilding = true;
+
   return (
-    <Page title='Projects'>
-      <Project
-        link='https://fr-mentor-arch-studio.vercel.app/'
-        name='Agency Website'
-        img={agency}
-      />
-      <Project
-        link='https://github.com/gabe-santos/excursionist'
-        name='Excursionist'
-        img={excursionistGif}
-      />
-      <Project
-        link='https://github.com/gabe-santos/calorie-macro-calc'
-        name='The Macrolator'
-        img={macrolatorGif}
-      />
+    <Page title='Work'>
+      {isRebuilding ? (
+        <div className=''> 🚧 Rebuilding 🚧 </div>
+      ) : (
+        <div>
+          <Project
+            link='https://fr-mentor-arch-studio.vercel.app/'
+            name='Agency Website'
+            img={agency}
+          />
+          <Project
+            link='https://github.com/gabe-santos/excursionist'
+            name='Excursionist'
+            img={excursionistGif}
+          />
+          <Project
+            link='https://github.com/gabe-santos/calorie-macro-calc'
+            name='The Macrolator'
+            img={macrolatorGif}
+          />
+        </div>
+      )}
     </Page>
   );
 };
